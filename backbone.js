@@ -4,6 +4,7 @@
 //     Backbone may be freely distributed under the MIT license.
 //     For all details and documentation:
 //     http://backbonejs.org
+//     author:wuzhongke
 
 (function(factory) {
 
@@ -11,6 +12,7 @@
   // We use `self` instead of `window` for `WebWorker` support.
   var root = (typeof self == 'object' && self.self == self && self) ||
             (typeof global == 'object' && global.global == global && global);
+  var isMe;
 
   // Set up Backbone appropriately for the environment. Start with AMD.
   if (typeof define === 'function' && define.amd) {
